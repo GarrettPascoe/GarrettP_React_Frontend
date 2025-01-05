@@ -5,17 +5,7 @@ import Paper from "@mui/material/Paper";
 
 const Resume = () => {
   return (
-    <div
-      className="container-fluid"
-      style={{
-        position: "absolute",
-        zIndex: 1,
-        top: 0,
-        left: 0,
-        padding: 0,
-        margin: 0,
-      }}
-    >
+    <>
       <Header />
 
       <div
@@ -272,11 +262,9 @@ const Resume = () => {
         </div>
         <div className="row" style={{ height: 100 }}></div>
       </div>
-      <div>
-        <Footer />
-        <Background />
-      </div>
-    </div>
+      <Footer />
+      <Background />
+    </>
   );
 };
 

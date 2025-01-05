@@ -11,17 +11,7 @@ import blue from "@mui/material/colors/blue";
 
 const ImageClassification = () => {
   return (
-    <div
-      className="container-fluid"
-      style={{
-        position: "absolute",
-        zIndex: 1,
-        top: 0,
-        left: 0,
-        padding: 0,
-        margin: 0,
-      }}
-    >
+    <>
       <Header />
 
       <div
@@ -135,11 +125,9 @@ const ImageClassification = () => {
         </div>
         <div className="row" style={{ height: 100 }} />
       </div>
-      <div>
-        <Footer />
-        <Background />
-      </div>
-    </div>
+      <Footer />
+      <Background />
+    </>
   );
 };
 

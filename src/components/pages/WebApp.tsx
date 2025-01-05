@@ -5,17 +5,7 @@ import TextBox from "../content/TextBox";
 
 const WebApp = () => {
   return (
-    <div
-      className="vw-100"
-      style={{
-        position: "absolute",
-        zIndex: 1,
-        top: 0,
-        left: 0,
-        padding: 0,
-        margin: 0,
-      }}
-    >
+    <>
       <Header />
 
       <div
@@ -85,11 +75,9 @@ const WebApp = () => {
           </div>
         </div>
       </div>
-      <div>
-        <Footer />
-        <Background />
-      </div>
-    </div>
+      <Footer />
+      <Background />
+    </>
   );
 };
 

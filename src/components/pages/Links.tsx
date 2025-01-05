@@ -5,17 +5,7 @@ import TextBoxWithButton from "../content/TextBoxWithButton";
 
 const Links = () => {
   return (
-    <div
-      className="container-fluid"
-      style={{
-        position: "absolute",
-        zIndex: 1,
-        top: 0,
-        left: 0,
-        padding: 0,
-        margin: 0,
-      }}
-    >
+    <>
       <Header />
 
       <div
@@ -50,11 +40,9 @@ const Links = () => {
           icon={[]}
         />
       </div>
-      <div>
-        <Footer />
-        <Background />
-      </div>
-    </div>
+      <Footer />
+      <Background />
+    </>
   );
 };
 

@@ -7,17 +7,7 @@ import blue from "@mui/material/colors/blue";
 
 const TowerDefense = () => {
   return (
-    <div
-      className="vw-100"
-      style={{
-        position: "absolute",
-        zIndex: 1,
-        top: 0,
-        left: 0,
-        padding: 0,
-        margin: 0,
-      }}
-    >
+    <>
       <Header />
 
       <div
@@ -128,11 +118,9 @@ const TowerDefense = () => {
         </div>
         <div className="row" style={{ height: 100 }} />
       </div>
-      <div>
-        <Footer />
-        <Background />
-      </div>
-    </div>
+      <Footer />
+      <Background />
+    </>
   );
 };
 

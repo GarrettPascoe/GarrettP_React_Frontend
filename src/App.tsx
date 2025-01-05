@@ -12,7 +12,18 @@ import { Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
+    //Main container
+    <div
+      className="vw-100 app"
+      style={{
+        position: "absolute",
+        zIndex: 1,
+        top: 0,
+        left: 0,
+        padding: 0,
+        margin: 0,
+      }}
+    >
       <Routes>
         <Route path="" element={<Home />} />
         <Route path="/Home" element={<Home />} />

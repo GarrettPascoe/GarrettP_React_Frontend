@@ -6,19 +6,11 @@ import TextBoxNewTab from "../content/TextBoxNewTab";
 
 const Portfolio = () => {
   return (
-    <div
-      className="container-fluid"
-      style={{
-        position: "absolute",
-        zIndex: 1,
-        top: 0,
-        left: 0,
-        padding: 0,
-        margin: 0,
-      }}
-    >
+    <>
+      {/* Header also contains the Navbar component */}
       <Header />
 
+      {/* Container for the body content. Size is determined by the contents. */}
       <div
         className="p-3 text-primary-emphasis bg-info-subtle border border-primary-subtle container-md"
         style={{
@@ -28,6 +20,9 @@ const Portfolio = () => {
       >
         <div className="row" style={{ height: 100 }}></div>
 
+        {/* The software used to develop the project is passed to the TextBox component
+         as a string array. The component will add icons corresponding to those strings
+         to the text box. */}
         <TextBoxWithButton
           title="Click Search Google Chrome Extension"
           text="Click Search is a Google Chrome Extension that allows the
@@ -96,11 +91,12 @@ const Portfolio = () => {
         />
         <div className="row" style={{ height: 100 }}></div>
       </div>
-      <div>
-        <Footer />
-        <Background />
-      </div>
-    </div>
+      {/* Footer contains links, contact information, and a form to submit a visitor's contact information
+      to my Postgresql database connected to my Django backend hosted as a Azure web app */}
+      <Footer />
+      {/* Background image repeats in both x and y directions and fills the original container. */}
+      <Background />
+    </>
   );
 };
 

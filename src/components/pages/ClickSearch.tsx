@@ -7,17 +7,7 @@ import TextBox from "../content/TextBox";
 
 const ClickSearch = () => {
   return (
-    <div
-      className="vw-100"
-      style={{
-        position: "absolute",
-        zIndex: 1,
-        top: 0,
-        left: 0,
-        padding: 0,
-        margin: 0,
-      }}
-    >
+    <>
       <Header />
 
       <div
@@ -164,7 +154,7 @@ const ClickSearch = () => {
       </div>
       <Footer />
       <Background />
-    </div>
+    </>
   );
 };
 

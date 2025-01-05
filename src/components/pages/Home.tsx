@@ -8,19 +8,12 @@ import Avatar from "@mui/material/Avatar";
 
 const Home = () => {
   return (
-    <div
-      className="vw-100"
-      style={{
-        position: "absolute",
-        zIndex: 1,
-        top: 0,
-        left: 0,
-        padding: 0,
-        margin: 0,
-      }}
-    >
+    //Main container
+    <>
+      {/* Header also contains the Navbar component */}
       <Header />
 
+      {/* Container for the body content. Size is determined by the contents. */}
       <div
         className="p-3 text-primary-emphasis bg-info-subtle border border-primary-subtle container-md"
         style={{
@@ -28,9 +21,19 @@ const Home = () => {
           zIndex: 1,
         }}
       >
+        {/* Container for the body content. Size is determined by the contents. */}
+        <div
+          className="p-3 text-primary-emphasis bg-info-subtle border border-primary-subtle container-md"
+          style={{
+            position: "relative",
+            zIndex: 1,
+          }}
+        ></div>
+        {/* Formatting is done mostly through Bootstrap's grid system */}
         <div className="row" style={{ height: 100 }} />
         <div className="row">
           <div className="col-7">
+            {/* Textboxes are made using Material UI's Paper component and use their elevation system */}
             <TextBox
               title="Welcome to My Homepage"
               text="I am Garrett Pascoe, a recent graduate from Oakland
@@ -80,10 +83,12 @@ const Home = () => {
         />
         <div className="row" style={{ height: 100 }} />
       </div>
-
+      {/* Footer contains links, contact information, and a form to submit a visitor's contact information
+      to my Postgresql database connected to my Django backend hosted as a Azure web app */}
       <Footer />
+      {/* Background image repeats in both x and y directions and fills the original container. */}
       <Background />
-    </div>
+    </>
   );
 };
 
