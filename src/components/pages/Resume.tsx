@@ -43,18 +43,12 @@ const Resume = () => {
                 <br></br>
                 <h3>Work Experience:</h3>
                 I've worked a part time job since I graduated high school as I
-                <br></br>
-                worked towards my degree. I've worked a customer service job
-                <br></br>
-                as a cashier and sales clerk as well as physically demanding
-                <br></br>
+                worked towards my degree. I've worked a customer service job as
+                a cashier and sales clerk as well as physically demanding
                 shipping and receiving jobs.
                 <br></br> <br></br>I am currently beginning work as an
-                independant contractor where
-                <br></br>I have mostly dealt with analyzing how well an ai
-                handles prompts
-                <br></br>
-                related to Python code.
+                independant contractor where I have mostly dealt with analyzing
+                how well an ai handles prompts related to Python code.
                 <br></br> <br></br>{" "}
               </p>
             </Paper>
@@ -207,7 +201,7 @@ const Resume = () => {
                 </ul>
                 <ul>
                   <h5>
-                    <strong>Frontend:</strong>
+                    <strong>Web Development:</strong>
                   </h5>
                   <li>
                     <strong>React</strong>
@@ -217,6 +211,9 @@ const Resume = () => {
                   </li>
                   <li>
                     <strong>SQLite</strong>
+                  </li>
+                  <li>
+                    <strong>PostgreSQL</strong>
                   </li>
                   <li>
                     <strong>Node.js</strong>
@@ -251,7 +248,7 @@ const Resume = () => {
                     <strong>Jupyter Notebook</strong>
                   </li>
                   <li>
-                    <strong></strong>
+                    <strong>Playwright Testing</strong>
                   </li>
                 </ul>
                 <br></br>{" "}
