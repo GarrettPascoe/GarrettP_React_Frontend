@@ -21,14 +21,6 @@ const Home = () => {
           zIndex: 1,
         }}
       >
-        {/* Container for the body content. Size is determined by the contents. */}
-        <div
-          className="p-3 text-primary-emphasis bg-info-subtle border border-primary-subtle container-md"
-          style={{
-            position: "relative",
-            zIndex: 1,
-          }}
-        ></div>
         {/* Formatting is done mostly through Bootstrap's grid system */}
         <div className="row" style={{ height: 100 }} />
         <div className="row">

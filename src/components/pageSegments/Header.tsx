@@ -1,27 +1,40 @@
 import NavBar from "../navigation/NavBar";
-import MyImage from "../../assets/GP_Logo.png";
+import MyImage from "../../assets/GP_New_Logo.png";
+import Banner from "../../assets/GP_Banner_BG.jpg";
 
 const Header = () => {
   return (
     <>
-      <div className=" bg-primary-subtle row vw-100">
-        <div className="col-5">
+      <div
+        className="row vw-100"
+        style={{
+          backgroundImage: `url(${Banner})`,
+          backgroundRepeat: "no-repeat",
+          backgroundSize: "cover",
+          height: 200,
+        }}
+      >
+        <div className="col-4">
           <img
             src={MyImage}
-            className="top-50 float-end translate-middle-y"
+            className="img-fluid top-50 float-end translate-middle-y"
             alt="GP_Logo"
-            style={{ position: "relative" }}
+            style={{ position: "relative", height: "150px", width: "150px" }}
           />
         </div>
-        <div
-          className="p-3 text-primary-emphasis col"
-          style={{ padding: 0, margin: 0, height: 150 }}
-        >
-          <h1 style={{ margin: 30 }}>Garrett Pascoe's Portfolio</h1>
+        <div className="col-1"></div>
+        <div className="col">
+          <div
+            className="text-light row align-items-center"
+            style={{ height: "200px" }}
+          >
+            <h1 className=" ">Garrett Pascoe's Portfolio</h1>
+          </div>
         </div>
-        <div style={{ padding: 0, margin: 0 }}>
-          <NavBar />
-        </div>
+        <div className="col-1"></div>
+      </div>
+      <div style={{ padding: 0, margin: 0 }}>
+        <NavBar />
       </div>
     </>
   );
