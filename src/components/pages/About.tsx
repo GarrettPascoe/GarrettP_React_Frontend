@@ -2,7 +2,7 @@ import Header from "../pageSegments/Header";
 import Footer from "../pageSegments/Footer";
 import Background from "../pageSegments/Background";
 import TextBox from "../content/TextBox";
-import Portrait from "../../assets/Circle_Portrait.png";
+import Portrait from "../../assets/Circle_Portrait_Border.png";
 import Avatar from "@mui/material/Avatar";
 
 const About = () => {
@@ -11,10 +11,13 @@ const About = () => {
       <Header />
 
       <div
-        className="p-3 text-primary-emphasis bg-info-subtle border border-primary-subtle container-md"
+        className="p-3 text-primary-emphasis container-md"
         style={{
           position: "relative",
           zIndex: 1,
+          backgroundColor: "#cccccc",
+          backgroundImage:
+            "linear-gradient(rgb(63, 67, 87), rgb(82, 128, 199), rgb(63, 67, 87))",
         }}
       >
         <div className="row" style={{ height: 100 }}></div>
@@ -38,7 +41,7 @@ const About = () => {
             <Avatar
               src={Portrait}
               alt="Portrait"
-              sx={{ width: 250, height: 250 }}
+              sx={{ width: 300, height: 300 }}
             />
           </div>
         </div>

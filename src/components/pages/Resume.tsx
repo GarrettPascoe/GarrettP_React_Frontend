@@ -9,10 +9,13 @@ const Resume = () => {
       <Header />
 
       <div
-        className="p-3 text-primary-emphasis bg-info-subtle border border-primary-subtle container-md"
+        className="p-3 text-primary-emphasis container-md"
         style={{
           position: "relative",
           zIndex: 1,
+          backgroundColor: "#cccccc",
+          backgroundImage:
+            "linear-gradient(rgb(63, 67, 87), rgb(82, 128, 199), rgb(63, 67, 87))",
         }}
       >
         <div className="row">

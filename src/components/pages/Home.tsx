@@ -3,8 +3,9 @@ import Footer from "../pageSegments/Footer";
 import Background from "../pageSegments/Background";
 import TextBoxWithButton from "../content/TextBoxWithButton";
 import TextBox from "../content/TextBox";
-import Portrait from "../../assets/Circle_Portrait.png";
+import Portrait from "../../assets/Circle_Portrait_Border.png";
 import Avatar from "@mui/material/Avatar";
+import blue from "@mui/material/colors/blue";
 
 const Home = () => {
   return (
@@ -15,10 +16,13 @@ const Home = () => {
 
       {/* Container for the body content. Size is determined by the contents. */}
       <div
-        className="p-3 text-primary-emphasis bg-info-subtle border border-primary-subtle container-md"
+        className="p-3 text-primary-emphasis container-md"
         style={{
           position: "relative",
           zIndex: 1,
+          backgroundColor: "#cccccc",
+          backgroundImage:
+            "linear-gradient(rgb(63, 67, 87), rgb(82, 128, 199), rgb(63, 67, 87))",
         }}
       >
         {/* Formatting is done mostly through Bootstrap's grid system */}
@@ -42,7 +46,7 @@ const Home = () => {
             <Avatar
               src={Portrait}
               alt="Portrait"
-              sx={{ width: 250, height: 250 }}
+              sx={{ width: 300, height: 300 }}
             />
           </div>
         </div>
