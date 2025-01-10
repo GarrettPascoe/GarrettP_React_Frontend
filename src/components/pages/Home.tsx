@@ -5,7 +5,6 @@ import TextBoxWithButton from "../content/TextBoxWithButton";
 import TextBox from "../content/TextBox";
 import Portrait from "../../assets/Circle_Portrait_Border.png";
 import Avatar from "@mui/material/Avatar";
-import blue from "@mui/material/colors/blue";
 
 const Home = () => {
   return (

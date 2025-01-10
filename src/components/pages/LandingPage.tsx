@@ -1,4 +1,4 @@
-import Background from "../../assets/Landing_Page_BG.jpeg";
+import Background from "../../assets/Landing_Page.jpeg";
 
 const LandingPage = () => {
   return (
