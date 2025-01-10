@@ -2,6 +2,7 @@ import NavButtonPercent from "../navigation/NavButtonPercent";
 import Logos from "./Logos";
 import Paper from "@mui/material/Paper";
 import blue from "@mui/material/colors/blue";
+import grey from "@mui/material/colors/grey";
 import Stack from "@mui/material/Stack";
 
 interface Props {
@@ -18,7 +19,7 @@ const TextBoxWithButton = ({ title, text, butLink, butName, icon }: Props) => {
       <>
         <div className="row justify-content-md-center">
           <div className="col-10">
-            <Paper elevation={10}>
+            <Paper elevation={10} sx={{ backgroundColor: grey[300] }}>
               <div className="row">
                 <div className="col-7">
                   <p style={{ margin: 20 }}>
@@ -55,7 +56,7 @@ const TextBoxWithButton = ({ title, text, butLink, butName, icon }: Props) => {
       <>
         <div className="row justify-content-md-center">
           <div className="col-10">
-            <Paper elevation={10}>
+            <Paper elevation={10} sx={{ backgroundColor: grey[300] }}>
               <div className="row">
                 <div
                   className="col-6"
@@ -119,7 +120,7 @@ const TextBoxWithButton = ({ title, text, butLink, butName, icon }: Props) => {
     <>
       <div className="row justify-content-md-center">
         <div className="col-10">
-          <Paper elevation={10}>
+          <Paper elevation={10} sx={{ backgroundColor: grey[300] }}>
             <div
               className="w-50"
               style={{

@@ -1,5 +1,6 @@
 import Paper from "@mui/material/Paper";
 import blue from "@mui/material/colors/blue";
+import grey from "@mui/material/colors/grey";
 
 interface Props {
   title: string;
@@ -12,7 +13,7 @@ const TextBox = ({ title, text }: Props) => {
       <>
         <div className="row justify-content-md-center">
           <div className="col-10">
-            <Paper elevation={10}>
+            <Paper elevation={10} sx={{ backgroundColor: grey[300] }}>
               <div className="row justify-content-md-center">
                 <div className="col-11">
                   <p style={{ margin: 20 }}>
@@ -34,7 +35,7 @@ const TextBox = ({ title, text }: Props) => {
     <>
       <div className="row justify-content-md-center">
         <div className="col-10">
-          <Paper elevation={10}>
+          <Paper elevation={10} sx={{ backgroundColor: grey[300] }}>
             <div
               className="w-50"
               style={{
