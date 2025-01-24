@@ -2,6 +2,7 @@ import Header from "../pageSegments/Header";
 import Footer from "../pageSegments/Footer";
 import Background from "../pageSegments/Background";
 import Paper from "@mui/material/Paper";
+import grey from "@mui/material/colors/grey";
 
 const Resume = () => {
   return (
@@ -21,7 +22,7 @@ const Resume = () => {
         <div className="row">
           <div className="col"></div>
           <div className="col-5">
-            <Paper elevation={10}>
+            <Paper elevation={10} sx={{ backgroundColor: grey[300] }}>
               <p style={{ margin: 20 }}>
                 {" "}
                 <br></br>
@@ -40,7 +41,7 @@ const Resume = () => {
           </div>
           <div className="col"></div>
           <div className="col-6">
-            <Paper elevation={10}>
+            <Paper elevation={10} sx={{ backgroundColor: grey[300] }}>
               <p style={{ margin: 20 }}>
                 {" "}
                 <br></br>
@@ -64,7 +65,7 @@ const Resume = () => {
           <div className="col-5">
             <div className="row">
               <div className="col">
-                <Paper elevation={10}>
+                <Paper elevation={10} sx={{ backgroundColor: grey[300] }}>
                   <p style={{ margin: 20 }}>
                     {" "}
                     <br></br>
@@ -99,7 +100,7 @@ const Resume = () => {
             </div>
             <div className="row">
               <div className="col">
-                <Paper elevation={10}>
+                <Paper elevation={10} sx={{ backgroundColor: grey[300] }}>
                   <p style={{ margin: 20 }}>
                     {" "}
                     <br></br>
@@ -142,7 +143,7 @@ const Resume = () => {
           </div>
           <div className="col"></div>
           <div className="col-6">
-            <Paper elevation={10}>
+            <Paper elevation={10} sx={{ backgroundColor: grey[300] }}>
               <p style={{ margin: 20 }}>
                 {" "}
                 <br></br>

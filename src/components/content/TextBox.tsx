@@ -11,11 +11,12 @@ const TextBox = ({ title, text }: Props) => {
   if (title == "n/a") {
     return (
       <>
-        <div className="row justify-content-md-center">
+        <div className="row" style={{ padding: 0, margin: 0 }}>
+          <div className="col-1"></div>
           <div className="col-10">
             <Paper elevation={10} sx={{ backgroundColor: grey[300] }}>
-              <div className="row justify-content-md-center">
-                <div className="col-11">
+              <div className="row">
+                <div className="col-12">
                   <p style={{ margin: 20 }}>
                     {" "}
                     <br></br>
@@ -26,6 +27,7 @@ const TextBox = ({ title, text }: Props) => {
               </div>
             </Paper>
           </div>
+          <div className="col-1"></div>
         </div>
       </>
     );
@@ -33,11 +35,11 @@ const TextBox = ({ title, text }: Props) => {
 
   return (
     <>
-      <div className="row justify-content-md-center">
-        <div className="col-10">
+      <div className="row">
+        <div className="col-12">
           <Paper elevation={10} sx={{ backgroundColor: grey[300] }}>
             <div
-              className="w-50"
+              className="w-75"
               style={{
                 position: "relative",
                 top: 5,
@@ -48,8 +50,8 @@ const TextBox = ({ title, text }: Props) => {
                 <h4 style={{ margin: 10 }}>{title}</h4>
               </Paper>
             </div>
-            <div className="row justify-content-md-center">
-              <div className="col-11">
+            <div className="row justify-content-center">
+              <div>
                 <p style={{ margin: 20 }}>
                   {" "}
                   <br></br>

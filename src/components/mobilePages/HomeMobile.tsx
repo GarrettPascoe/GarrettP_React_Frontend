@@ -1,36 +1,32 @@
-import Header from "../pageSegments/Header";
-import Footer from "../pageSegments/Footer";
+import HeaderMobile from "../pageSegments/HeaderMobile";
+import FooterMobile from "../pageSegments/FooterMobile";
 import Background from "../pageSegments/Background";
-import TextBoxWithButton from "../content/TextBoxWithButton";
+import TextBoxWithButtonMobile from "../content/TextBoxWithButtonMobile";
 import TextBox from "../content/TextBox";
-import Portrait from "../../assets/Circle_Portrait.png";
+import Portrait from "../../assets/Circle_Portrait_Border.png";
 import Avatar from "@mui/material/Avatar";
 
 const HomeMobile = () => {
   return (
-    <div
-      className="vw-100"
-      style={{
-        position: "absolute",
-        zIndex: 1,
-        top: 0,
-        left: 0,
-        padding: 0,
-        margin: 0,
-      }}
-    >
-      <Header />
+    <>
+      <HeaderMobile />
 
       <div
-        className="p-3 text-primary-emphasis bg-info-subtle border border-primary-subtle container-md"
+        className="text-primary-emphasis"
         style={{
+          margin: 0,
+          padding: 0,
           position: "relative",
           zIndex: 1,
+          backgroundColor: "#cccccc",
+          backgroundImage:
+            "linear-gradient(rgb(63, 67, 87), rgb(82, 128, 199), rgb(63, 67, 87))",
         }}
       >
-        <div className="row" style={{ height: 100 }} />
-        <div className="row">
-          <div className="col-7">
+        <div className="row" style={{ height: 50 }} />
+        <div className="row justify-content-center">
+          <div className="col-1" />
+          <div className="col-10">
             <TextBox
               title="Welcome to My Homepage"
               text="I am Garrett Pascoe, a recent graduate from Oakland
@@ -43,47 +39,72 @@ const HomeMobile = () => {
                       database."
             />
           </div>
-          <div className="col-5">
-            <Avatar
-              src={Portrait}
-              alt="Portrait"
-              sx={{ width: 250, height: 250 }}
+          <div className="col-1" />
+        </div>
+        <div className="row" style={{ height: 50 }} />
+        <div className="row justify-content-center">
+          <Avatar
+            src={Portrait}
+            alt="Portrait"
+            sx={{
+              paddingRight: 0,
+              paddingLeft: 0,
+              width: 200,
+              height: 200,
+            }}
+          />
+        </div>
+        <div className="row" style={{ height: 50 }} />
+        <div className="row">
+          <div className="col-1" />
+          <div className="col-10">
+            <TextBoxWithButtonMobile
+              title="n/a"
+              text="Visit my About page in order to learn more about
+                    me and gain insight into my thought processes."
+              butLink="/About"
+              butName="Go to About Page"
+              icon={[]}
             />
           </div>
+          <div className="col-1" />
         </div>
-        <div className="row" style={{ height: 100 }} />
-        <TextBoxWithButton
-          title="n/a"
-          text="Visit my About page in order to learn more about
-                    me and gain insight into my thought processes."
-          butLink="/About"
-          butName="Go to About Page"
-          icon={[]}
-        />
-        <div className="row" style={{ height: 100 }} />
-        <TextBoxWithButton
-          title="n/a"
-          text="Visit my Resume page for an overview of my skills
+        <div className="row" style={{ height: 50 }} />
+        <div className="row">
+          <div className="col-1" />
+          <div className="col-10">
+            <TextBoxWithButtonMobile
+              title="n/a"
+              text="Visit my Resume page for an overview of my skills
                     and qualifications."
-          butLink="/Resume"
-          butName="Go to Resume Page"
-          icon={[]}
-        />
-        <div className="row" style={{ height: 100 }} />
-        <TextBoxWithButton
-          title="n/a"
-          text="Visit my portfolio page for a brief overview of my
+              butLink="/Resume"
+              butName="Go to Resume Page"
+              icon={[]}
+            />
+          </div>
+          <div className="col-1" />
+        </div>
+        <div className="row" style={{ height: 50 }} />
+        <div className="row">
+          <div className="col-1" />
+          <div className="col-10">
+            <TextBoxWithButtonMobile
+              title="n/a"
+              text="Visit my portfolio page for a brief overview of my
                     projects with links for more in-depth explainations."
-          butLink="/Portfolio"
-          butName="Go to Portfolio Page"
-          icon={[]}
-        />
-        <div className="row" style={{ height: 100 }} />
+              butLink="/Portfolio"
+              butName="Go to Portfolio Page"
+              icon={[]}
+            />
+          </div>
+          <div className="col-1" />
+        </div>
+        <div className="row" style={{ height: 50 }} />
       </div>
 
-      <Footer />
+      <FooterMobile />
       <Background />
-    </div>
+    </>
   );
 };
 
