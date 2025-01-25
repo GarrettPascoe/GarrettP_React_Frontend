@@ -1,4 +1,4 @@
-import NavButtonPercent from "../navigation/NavButtonPercent";
+import NavButtonNewTab from "../navigation/NavButtonNewTab";
 import Logos from "./Logos";
 import Paper from "@mui/material/Paper";
 import blue from "@mui/material/colors/blue";
@@ -13,7 +13,7 @@ interface Props {
   icon: Array<string>;
 }
 
-const TextBoxWithButtonMobile = ({
+const TextBoxNewTabMobile = ({
   title,
   text,
   butLink,
@@ -23,27 +23,39 @@ const TextBoxWithButtonMobile = ({
   if (title == "n/a") {
     return (
       <>
-        <Paper elevation={10} sx={{ backgroundColor: grey[300] }}>
-          <div className="row">
-            <div className="col-1" />
-            <div className="col-10">
-              <p style={{ margin: 20 }}>
-                {" "}
-                <br></br>
-                {text}
-                <br></br> <br></br>{" "}
-              </p>
-            </div>
-            <div className="col-1" />
+        <div className="row justify-content-md-center">
+          <div className="col-1" />
+          <div className="col-10">
+            <Paper elevation={10} sx={{ backgroundColor: grey[300] }}>
+              <div className="row">
+                <div className="col-7">
+                  <p style={{ margin: 20 }}>
+                    {" "}
+                    <br></br>
+                    {text}
+                    <br></br> <br></br>{" "}
+                  </p>
+                </div>
+                <div className="col-1" />
+              </div>
+              <div className="row">
+                <div className="col-1">
+                  <div
+                    className="col-10 top-50 translate-middle-y"
+                    style={{
+                      position: "relative",
+                      height: "50%",
+                      width: "100%",
+                    }}
+                  >
+                    <NavButtonNewTab link={butLink} name={butName} />
+                  </div>
+                </div>
+                <div className="col-1" />
+              </div>
+            </Paper>
           </div>
-          <div className="row" style={{ height: 100 }}>
-            <div className="col-1" />
-            <div className="col-10" style={{ padding: 5, paddingBottom: 10 }}>
-              <NavButtonPercent link={butLink} name={butName} />
-            </div>
-            <div className="col-1" />
-          </div>
-        </Paper>
+        </div>
       </>
     );
   }
@@ -57,7 +69,12 @@ const TextBoxWithButtonMobile = ({
             <Paper elevation={10} sx={{ backgroundColor: grey[300] }}>
               <div className="row">
                 <div className="col-1" />
-                <div className="col-10" style={{}}>
+                <div
+                  className="col-10"
+                  style={{
+                    position: "relative",
+                  }}
+                >
                   <Paper elevation={11} sx={{ backgroundColor: blue[300] }}>
                     <h4 style={{ margin: 10 }}>{title}</h4>
                   </Paper>
@@ -102,10 +119,10 @@ const TextBoxWithButtonMobile = ({
                       marginBottom: 10,
                     }}
                   >
-                    <NavButtonPercent link={butLink} name={butName} />
+                    <NavButtonNewTab link={butLink} name={butName} />
                   </div>
+                  <div className="col-1" />
                 </div>
-                <div className="col-1" />
               </div>
             </Paper>
           </div>
@@ -122,7 +139,7 @@ const TextBoxWithButtonMobile = ({
         <div className="col-10">
           <Paper elevation={10} sx={{ backgroundColor: grey[300] }}>
             <div
-              className="row"
+              className="col"
               style={{
                 position: "relative",
                 top: 5,
@@ -134,7 +151,7 @@ const TextBoxWithButtonMobile = ({
               </Paper>
             </div>
             <div className="row">
-              <div className="col-12">
+              <div className="col-7">
                 <p style={{ margin: 20 }}>
                   {" "}
                   <br></br>
@@ -142,9 +159,8 @@ const TextBoxWithButtonMobile = ({
                   <br></br> <br></br>{" "}
                 </p>
               </div>
-            </div>
-            <div className="row">
-              <div className="col-10">
+              <div className="col-1"></div>
+              <div className="col-3">
                 <div
                   className="top-50 translate-middle-y"
                   style={{
@@ -153,9 +169,10 @@ const TextBoxWithButtonMobile = ({
                     width: "100%",
                   }}
                 >
-                  <NavButtonPercent link={butLink} name={butName} />
+                  <NavButtonNewTab link={butLink} name={butName} />
                 </div>
               </div>
+              <div className="col-1"></div>
             </div>
           </Paper>
         </div>
@@ -165,4 +182,4 @@ const TextBoxWithButtonMobile = ({
   );
 };
 
-export default TextBoxWithButtonMobile;
+export default TextBoxNewTabMobile;

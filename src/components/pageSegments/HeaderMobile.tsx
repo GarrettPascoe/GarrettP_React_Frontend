@@ -6,7 +6,7 @@ const HeaderMobile = () => {
   return (
     <>
       <div
-        className="row vw-100"
+        className="row"
         style={{
           backgroundImage: `url(${Banner})`,
           backgroundRepeat: "no-repeat",

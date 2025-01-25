@@ -1,42 +1,32 @@
-import AboutMobile from "../mobilePages/AboutMobile";
-import Header from "../pageSegments/Header";
-import Footer from "../pageSegments/Footer";
+import HeaderMobile from "../pageSegments/HeaderMobile";
+import FooterMobile from "../pageSegments/FooterMobile";
 import Background from "../pageSegments/Background";
 import TextBox from "../content/TextBox";
 import Portrait from "../../assets/Circle_Portrait_Border.png";
 import Avatar from "@mui/material/Avatar";
-import { useMediaQuery } from "react-responsive";
 
-const About = () => {
-  //Check to determine if user is on mobile device
-  const isMobile = useMediaQuery({ query: "(max-width: 767px)" });
-
+const AboutMobile = () => {
   return (
-    //Main container
-    <div>
-      {/* Determine whether desktop or mobile layout should be used */}
-      {isMobile ? (
-        <AboutMobile />
-      ) : (
-        <div>
-          <Header />
+    <>
+      <HeaderMobile />
 
-          <div
-            className="p-3 text-primary-emphasis container-md"
-            style={{
-              position: "relative",
-              zIndex: 1,
-              backgroundColor: "#cccccc",
-              backgroundImage:
-                "linear-gradient(rgb(63, 67, 87), rgb(82, 128, 199), rgb(63, 67, 87))",
-            }}
-          >
-            <div className="row" style={{ height: 100 }}></div>
-            <div className="row">
-              <div className="col-8">
-                <TextBox
-                  title="My name is Garrett Pascoe."
-                  text="A recent graduate of Oakland University with a Bachelor of
+      <div
+        className="text-primary-emphasis"
+        style={{
+          position: "relative",
+          zIndex: 1,
+          backgroundColor: "#cccccc",
+          backgroundImage:
+            "linear-gradient(rgb(63, 67, 87), rgb(82, 128, 199), rgb(63, 67, 87))",
+        }}
+      >
+        <div className="row" style={{ height: 50 }}></div>
+        <div className="row">
+          <div className="col-1" />
+          <div className="col-10">
+            <TextBox
+              title="My name is Garrett Pascoe."
+              text="A recent graduate of Oakland University with a Bachelor of
                   Science degree in Computer Science. I am a fast learner and an
                   excellent problem solver, exactly the kind of person you want
                   working on your next big project. Whether its my ability to
@@ -46,23 +36,30 @@ const About = () => {
                   keeping the ball rolling on a project and making meaningful
                   progress towards its completion where others may feel
                   uncertain and willing to stall."
-                />
-              </div>
-              <div className="col-4">
-                <Avatar
-                  src={Portrait}
-                  alt="Portrait"
-                  sx={{ width: 300, height: 300 }}
-                />
-              </div>
-            </div>
-            <div className="row" style={{ height: 100 }}></div>
-            <div className="row">
-              <div className="col-2"></div>
-              <div className="col-10">
-                <TextBox
-                  title="Problem Solving"
-                  text="One of my greatest strong points. I have always been a fan of
+            />
+          </div>
+          <div className="col-1" />
+        </div>
+        <div className="row" style={{ height: 50 }} />
+        <div className="row justify-content-center">
+          <Avatar
+            src={Portrait}
+            alt="Portrait"
+            sx={{
+              paddingRight: 0,
+              paddingLeft: 0,
+              width: 250,
+              height: 250,
+            }}
+          />
+        </div>
+        <div className="row" style={{ height: 50 }}></div>
+        <div className="row">
+          <div className="col-1" />
+          <div className="col-10">
+            <TextBox
+              title="Problem Solving"
+              text="One of my greatest strong points. I have always been a fan of
                   puzzles and problem solving. I have used this interest in
                   problem solving to my advantage in programming. By viewing
                   every problem in a project as a puzzle that needs to be
@@ -78,15 +75,17 @@ const About = () => {
                   principles that go into making them function. I am looking to
                   obtain an in-depth understanding of machine learning, not just
                   the surface level skills required to build models."
-                />
-              </div>
-            </div>
-            <div className="row" style={{ height: 100 }}></div>
-            <div className="row">
-              <div className="col-10">
-                <TextBox
-                  title="Work Experience"
-                  text="When I graduated high school, I immediantly sought out a part
+            />
+          </div>
+          <div className="col-1" />
+        </div>
+        <div className="row" style={{ height: 50 }}></div>
+        <div className="row">
+          <div className="col-1" />
+          <div className="col-10">
+            <TextBox
+              title="Work Experience"
+              text="When I graduated high school, I immediantly sought out a part
                   time job to work as I studied in college part time. The first
                   job I worked was at a department store called Buy Buy Baby as
                   a cashier. However, I had many more duties than just
@@ -102,17 +101,17 @@ const About = () => {
                   own difficulties, but compared to my first job, it feels like
                   a breeze. After working such a stressful job, everything else
                   comes across easy in comparison."
-                />
-              </div>
-              <div className="col-2"></div>
-            </div>
-            <div className="row" style={{ height: 100 }}></div>
-            <div className="row">
-              <div className="col-2"></div>
-              <div className="col-10">
-                <TextBox
-                  title="Hobbies and Interests"
-                  text="My interest in video games, Legos, and building/painting scale
+            />
+          </div>
+          <div className="col-1" />
+        </div>
+        <div className="row" style={{ height: 50 }}></div>
+        <div className="row">
+          <div className="col-1" />
+          <div className="col-10">
+            <TextBox
+              title="Hobbies and Interests"
+              text="My interest in video games, Legos, and building/painting scale
                   minatures led me to being interested in computer programming
                   rather naturally. I've always gravitated to hobbies that keep
                   me thinking and/or allow me to flex my creativity. I enjoy
@@ -125,17 +124,16 @@ const About = () => {
                   40k figures. Not only have I placed first in painting
                   competitions, I've been commissioned to paint models to a
                   professional standard."
-                />
-              </div>
-            </div>
-            <div className="row" style={{ height: 100 }}></div>
+            />
           </div>
-          <Footer />
-          <Background />
+          <div className="col-1" />
         </div>
-      )}
-    </div>
+        <div className="row" style={{ height: 50 }}></div>
+      </div>
+      <FooterMobile />
+      <Background />
+    </>
   );
 };
 
-export default About;
+export default AboutMobile;

@@ -49,8 +49,8 @@ const HomeMobile = () => {
             sx={{
               paddingRight: 0,
               paddingLeft: 0,
-              width: 200,
-              height: 200,
+              width: 250,
+              height: 250,
             }}
           />
         </div>

@@ -61,10 +61,13 @@ const FooterMobile = () => {
           </div>
         </div>
         <div className="row">
-          <div className="col-12">
+          <div className="col-3" />
+          <div className="col-8">
             <CompanyForm />
           </div>
+          <div className="col-1" />
         </div>
+        <div className="row" style={{ height: 100 }} />
       </div>
     </>
   );
