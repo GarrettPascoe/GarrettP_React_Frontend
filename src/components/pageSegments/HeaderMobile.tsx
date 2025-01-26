@@ -11,6 +11,8 @@ const HeaderMobile = () => {
           backgroundImage: `url(${Banner})`,
           backgroundRepeat: "no-repeat",
           backgroundSize: "cover",
+          margin: 0,
+          padding: 0,
           height: 200,
         }}
       >
@@ -23,16 +25,19 @@ const HeaderMobile = () => {
             style={{ position: "relative", height: "150px", width: "150px" }}
           />
         </div>
-        <div className="col-2"></div>
-        <div className="col-4">
+        <div className="col-1"></div>
+        <div className="col-6">
           <div
             className="text-light row align-items-center"
-            style={{ height: "200px" }}
+            style={{
+              margin: 0,
+              padding: 0,
+              height: "200px",
+            }}
           >
             <h1 className=" ">Garrett Pascoe's Portfolio</h1>
           </div>
         </div>
-        <div className="col-1"></div>
       </div>
       <div style={{ padding: 0, margin: 0 }}>
         <NavBarMobile />
