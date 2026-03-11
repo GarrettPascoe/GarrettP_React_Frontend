@@ -10,7 +10,7 @@ const FooterMobile = () => {
         <div className="row" style={{ height: 50 }}></div>
         <div className="row">
           <div className="col-6">
-            <p style={{}}>
+            <div style={{}}>
               <h5>Website Links:</h5>
               <br></br>
               <a href="/Home">Home</a>
@@ -21,10 +21,10 @@ const FooterMobile = () => {
               <br></br>
               <a href="/Portfolio">Portfolio</a>
               <br></br>
-            </p>
+            </div>
           </div>
           <div className="col-6">
-            <p style={{}}>
+            <div style={{}}>
               <br></br>
               <h5>External Links:</h5>
               <br></br>
@@ -46,18 +46,18 @@ const FooterMobile = () => {
                 LinkedIn Profile
               </a>
               <br></br> <br></br>{" "}
-            </p>
+            </div>
           </div>
         </div>
         <div className="row">
           <div className="col-12">
-            <p style={{}}>
+            <div style={{}}>
               <br></br>
               <h5>Contact Me:</h5>
               <br></br>
               <p>garrettp523@gmail.com</p>
               <br></br> <br></br>{" "}
-            </p>
+            </div>
           </div>
         </div>
         <div className="row">

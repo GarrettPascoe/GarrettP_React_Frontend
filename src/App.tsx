@@ -5,6 +5,7 @@ import About from "./components/pages/About";
 import Links from "./components/pages/Links";
 import ClickSearch from "./components/pages/ClickSearch";
 import ImageClassification from "./components/pages/ImageClassification";
+import CarChooserAgent from "./components/pages/CarChooserAgent";
 import WebApp from "./components/pages/WebApp";
 import LandingPagePortrait from "./components/pages/LandingPagePortrait";
 import LandingPage from "./components/pages/LandingPage";
@@ -33,6 +34,7 @@ function App() {
         <Route path="/Links" element={<Links />} />
         <Route path="/ClickSearch" element={<ClickSearch />} />
         <Route path="/ImageClassification" element={<ImageClassification />} />
+        <Route path="/CarChooserAgent" element={<CarChooserAgent />} />
         <Route path="/WebApp" element={<WebApp />} />
         <Route path="/LandingPagePortrait" element={<LandingPagePortrait />} />
         <Route path="/LandingPage" element={<LandingPage />} />

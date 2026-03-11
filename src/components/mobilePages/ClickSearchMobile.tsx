@@ -4,6 +4,7 @@ import Background from "../pageSegments/Background";
 import Paper from "@mui/material/Paper";
 import blue from "@mui/material/colors/blue";
 import TextBox from "../content/TextBox";
+import PopupDefault from "../../assets/Popup.png";
 
 const ClickSearchMobile = () => {
   return (
@@ -26,8 +27,8 @@ const ClickSearchMobile = () => {
           <div className="col-10">
             <TextBox
               title="Click Search"
-              text="Click Search is a Google Chrome App my partners and I created
-                for our senior project. The user can quickly search for
+              text="Click Search is a Google Chrome Extension that I developed
+                with my team for our senior project. The user can quickly search for
                 information about the media featured in a YouTube video they are
                 currently viewing. The app makes use of the Youtube API to
                 examine the tags of the current YoutTube tab and determines
@@ -39,6 +40,22 @@ const ClickSearchMobile = () => {
             />
           </div>
           <div className="col-1" />
+        </div>
+        <div className="row" style={{ height: 50 }} />
+        <div className="row">
+          <div className="col-1"></div>
+          <div className="col-10">
+            <TextBox
+              title="My Contribution"
+              text="Originally, my tasks included handling the logic that would determine what
+                  the most important tags of the video were as well as the messaging and information
+                  passing between the APIs, the service worker, the app popup, and chrome's local storage.
+                  Recently, I overhauled the entire project. I cut down the number of libraries and packages
+                  used, found up-to-date alternatives for any depreciated libraries, and refactored the project
+                  into a React Vite app."
+            />
+          </div>
+          <div className="col-1"></div>
         </div>
         <div className="row" style={{ height: 50 }} />
         <div className="row">
@@ -56,6 +73,18 @@ const ClickSearchMobile = () => {
             />
           </div>
           <div className="col-1" />
+        </div>
+        <div className="row" style={{ height: 50 }} />
+        <div className="row">
+          <img
+            src={PopupDefault}
+            className="mx-auto"
+            alt="Popup_Default"
+            style={{
+              position: "relative",
+              width: "200px",
+            }}
+          />
         </div>
         <div className="row" style={{ height: 50 }} />
         <div className="row">

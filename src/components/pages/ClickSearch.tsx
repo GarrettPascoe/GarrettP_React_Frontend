@@ -6,6 +6,7 @@ import Paper from "@mui/material/Paper";
 import blue from "@mui/material/colors/blue";
 import TextBox from "../content/TextBox";
 import { useMediaQuery } from "react-responsive";
+import PopupDefault from "../../assets/Popup.png";
 
 const ClickSearch = () => {
   //Check to determine if user is on mobile device
@@ -34,11 +35,12 @@ const ClickSearch = () => {
           >
             <div className="row" style={{ height: 100 }} />
             <div className="row">
+              <div className="col-2"></div>
               <div className="col-8">
                 <TextBox
                   title="Click Search"
-                  text="Click Search is a Google Chrome App my partners and I created
-                for our senior project. The user can quickly search for
+                  text="Click Search is a Google Chrome Extension that I developed
+                with my team for our senior project. The user can quickly search for
                 information about the media featured in a YouTube video they are
                 currently viewing. The app makes use of the Youtube API to
                 examine the tags of the current YoutTube tab and determines
@@ -49,17 +51,42 @@ const ClickSearch = () => {
                 and presenting the results to the user in a pop-up."
                 />
               </div>
+              <div className="col-2"></div>
+            </div>
+            <div className="row" style={{ height: 100 }} />
+            <div className="row">
+              <div className="col-8">
+                <TextBox
+                  title="My Contribution"
+                  text="Originally, my tasks included handling the logic that would determine what
+                  the most important tags of the video were as well as the messaging and information
+                  passing between the APIs, the service worker, the app popup, and chrome's local storage.
+                  Recently, I overhauled the entire project. I cut down the number of libraries and packages
+                  used, found up-to-date alternatives for any depreciated libraries, and refactored the project
+                  into a React Vite app."
+                />
+              </div>
               <div className="col-4"></div>
             </div>
             <div className="row" style={{ height: 100 }} />
             <div className="row">
-              <div className="col-4"></div>
+              <div className="col-4">
+                <img
+                  src={PopupDefault}
+                  className="mx-auto"
+                  alt="Popup_Default"
+                  style={{
+                    position: "relative",
+                    width: "300px",
+                  }}
+                />
+              </div>
               <div className="col-8">
                 <TextBox
                   title="For Example:"
-                  text="If the user just finished viewing the trailer for the One Piece
-                live action TV series, the extension would determine that the
-                most relevant tag of the video is 'One Piece' and that One Piece
+                  text="If the user just finished viewing the trailer for the Cyberpunk: Edgerunners
+                TV series, the extension would determine that the
+                most relevant tag of the video is 'Cyberpunk' and that Cyberpunk
                 is a TV series. This will be done automatically upon clicking on
                 the video. My main role in the project was to create the
                 algorithm that determined these variables and stored the values
@@ -89,10 +116,10 @@ const ClickSearch = () => {
               <div className="col-8">
                 <TextBox
                   title="In Addition:"
-                  text="In this example, if the user selects the One Piece option, the
-                extension will input the term One Piece into the TV series
+                  text="In this example, if the user selects the Cyberpunk option, the
+                extension will input the term Cyberpunk into the TV series
                 template for queries and will ask queries such as 'When did the
-                One Piece series begin airing?' and 'Is the One Piece series
+                Cyberpunk series begin airing?' and 'Is the Cyberpunk series
                 currently ongoing?'. If the user instead clicks on the third
                 option, the queries will instead be about Netflix in the context
                 of a YouTube creator. Queries such as 'When did Netflix begin

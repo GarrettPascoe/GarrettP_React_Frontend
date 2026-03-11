@@ -23,6 +23,10 @@ const NavBar = () => {
                 Click Search
               </NavDropdown.Item>
               <NavDropdown.Divider />
+              <NavDropdown.Item href="/CarChooserAgent">
+                Agentic AI
+              </NavDropdown.Item>
+              <NavDropdown.Divider />
               <NavDropdown.Item href="/ImageClassification">
                 Image Classification
               </NavDropdown.Item>
