@@ -42,6 +42,19 @@ const Portfolio = () => {
         <div className="row" style={{ height: 50 }}></div>
 
         <TextBoxWithButtonMobile
+          title="Car Chooser AI agent"
+          text="A langchain agent that assists the user in finding a Ford vehicle
+              based on their preferences. The agent utilizes session memory to sustain
+              a multi step conversation with the user. I created a FastAPI agent and
+              hosted it on Render to make an interactive demo for the project."
+          butLink="/CarChooserAgent"
+          butName="Go to Car Chooser Agent"
+          icon={["langchain", "fastapi"]}
+        />
+
+        <div className="row" style={{ height: 50 }}></div>
+
+        <TextBoxWithButtonMobile
           title="Portfolio Website"
           text="The frontend of this website was created using the React Vite 
             framework with Typescript. The backend was created using the Django
