@@ -4,6 +4,8 @@ import Android from "../../assets/android-icon.png";
 import Azure from "../../assets/azure-icon.png";
 import Django from "../../assets/django-icon.png";
 import Node from "../../assets/node-icon.png";
+import Langchain from "../../assets/langchain-icon.png";
+import Fastapi from "../../assets/fastapi-icon.png";
 import Postgresql from "../../assets/postgresql-icon.png";
 import Pytorch from "../../assets/pytorch-icon.png";
 import Unity from "../../assets/unity-icon.png";
@@ -102,6 +104,24 @@ const Logos = ({ icon_name }: Props) => {
       <Avatar
         src={Jupyter}
         alt="Jupyter Notebook"
+        sx={{ bgcolor: grey[900], width: 56, height: 56 }}
+      />
+    );
+  }
+  if (icon_name == "fastapi") {
+    return (
+      <Avatar
+        src={Fastapi}
+        alt="FastAPI"
+        sx={{ bgcolor: grey[900], width: 56, height: 56 }}
+      />
+    );
+  }
+  if (icon_name == "langchain") {
+    return (
+      <Avatar
+        src={Langchain}
+        alt="Langchain"
         sx={{ bgcolor: grey[900], width: 56, height: 56 }}
       />
     );
