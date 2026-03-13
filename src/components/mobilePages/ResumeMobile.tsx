@@ -117,6 +117,15 @@ const Resume = () => {
                     <strong>Keras</strong>
                   </li>
                   <li>
+                    <strong>Langchain</strong>
+                  </li>
+                  <li>
+                    <strong>Agentic AI</strong>
+                  </li>
+                  <li>
+                    <strong>Chatbots</strong>
+                  </li>
+                  <li>
                     <strong>Image Classification</strong>
                   </li>
                   <li>
@@ -147,6 +156,9 @@ const Resume = () => {
                   </li>
                   <li>
                     <strong>Google Chrome Extension</strong>
+                  </li>
+                  <li>
+                    <strong>FastAPI</strong>
                   </li>
                   <li>
                     <strong>REST API</strong>
