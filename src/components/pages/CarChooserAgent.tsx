@@ -48,6 +48,20 @@ const CarChooserAgent = () => {
             </div>
             <div className="row" style={{ height: 100 }} />
             <div className="row">
+              <div className="col-2"></div>
+              <div className="col-8">
+                <TextBox
+                  title="The Backend Process"
+                  text="User messages are sent to my Django backend, which controls the interactions between the user and the FastAPI agent hosted on Render.
+                  If there is no current session ID, a request is made to create a new session. NOTE: Render may take a minute or two to start up the agent.
+                  Once the session is created, the agent will send its first response. The backend keeps track of all messages during the session, facilitating
+                  a full, multi-turn conversation."
+                />
+              </div>
+              <div className="col-2"></div>
+            </div>
+            <div className="row" style={{ height: 100 }} />
+            <div className="row">
               <div className="col-2" />
               <div className="col-8">
                 <AgentAIChat />
